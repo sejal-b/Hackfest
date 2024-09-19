@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Router from "src/router/router";
 
 const appMinWidth = '1024px';
 
@@ -7,7 +8,7 @@ const AppContent = () => {
     return (
         <Container>
             <RouterContainer>
-                hello
+                <Router />
             </RouterContainer>
         </Container>
     );
