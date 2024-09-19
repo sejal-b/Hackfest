@@ -20,9 +20,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "bin/*.ts"],
   "exclude": ["node_modules"]
