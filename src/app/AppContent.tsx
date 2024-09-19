@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Router from "src/router/router"; // Ensure this path is correct
-import Navbar from 'src/components/Navbar/navbar'; // Make sure to import Navbar
+import Navbar from 'src/components/Navbar/navbar';
+import Sidebar from "../components/Sidebar/sidebar";
 
 const appMinWidth = '1024px';
 
@@ -9,8 +10,9 @@ const AppContent = () => {
     return (
         <Container>
             <RouterContainer>
-                <Navbar /> {/* Render Navbar outside of Router */}
-                <Router />  {/* Main routing handling */}
+            <Sidebar/>
+                <Navbar />
+                <Router />
             </RouterContainer>
         </Container>
     );

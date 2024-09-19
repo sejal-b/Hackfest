@@ -33,16 +33,7 @@ const Navbar: React.FC = () => {
     <>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={handleDrawerToggle}
-            sx={{ marginRight: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box sx={{ display: "flex", alignItems: "center", marginLeft: "15px" }}>
             <img
               src={logo}
               alt="Logo"
@@ -55,10 +46,10 @@ const Navbar: React.FC = () => {
             />
             <Typography
               variant="h6"
-              sx={{ marginInlineStart: "15px", cursor: "pointer" }}
+              sx={{ marginInlineStart: "15px", cursor: "pointer"}}
               onClick={handleNavigation}
             >
-              Shigoto Mitra
+              Shigoto-Mitra
             </Typography>
           </Box>
         </Toolbar>

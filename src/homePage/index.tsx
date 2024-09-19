@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Box } from "@mui/material";
 import slackLogo from "src/assets/slack-logo.png";
 import githubLogo from "src/assets/github-logo.png";
-import IntegrationCard from "../components/Cards/integrationCard"; // Ensure this path is correct
+import IntegrationCard from "../components/Cards/integrationCard";
 
 const Integrations: React.FC = () => {
   const integrations = [
