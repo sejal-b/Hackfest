@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import {GithubTableHeaders, SlackTableHeaders, SORTBY} from 'src/consts/enums/placeholders.const';
+import { SlackTableHeaders, SORTBY} from 'src/consts/enums/placeholders.const';
 import { DetailsTable, DetailsTableContainer } from 'src/features/state/conatiner.styled';
 import Pagination from 'src/components/Pagination/pagination';
 import { Table, Tr } from 'src/components/Table/table';

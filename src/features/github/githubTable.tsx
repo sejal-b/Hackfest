@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {DetailsTable, DetailsTableContainer} from "src/features/state/conatiner.styled";
 import Pagination from "src/components/Pagination/pagination";
 import {Table, Tr} from "src/components/Table/table";
-import {GithubTableHeaders, SlackTableHeaders, SORTBY} from "src/consts/enums/placeholders.const";
+import {GithubTableHeaders, SORTBY} from "src/consts/enums/placeholders.const";
 import Mockdata , { Notification } from "src/mock/data";
 import MultiSelectDropdownCheckbox from "../../components/FilterColumns/filter";
 import SortColumn from "../../components/SortedColumns/sort";

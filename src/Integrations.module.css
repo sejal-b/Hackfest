@@ -1,0 +1,10 @@
+.container {
+    padding: 20px; /* Adjust padding as per your design */
+    background-color: white; /* Prevents Tailwind background color interference */
+}
+
+/* Add any additional styling you want for the Grid, Box, or other elements here */
+.card {
+    margin: 40px; /* Example card margin */
+    min-height: 200px; /* Ensure cards have a minimum height */
+}
