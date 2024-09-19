@@ -11,7 +11,7 @@ import {
 import Pagination from "src/components/Pagination/pagination";
 import { Table, Tr } from "src/components/Table/table";
 import Mockdata, { Notification } from "src/mock/data";
-// import MultiSelectDropdownCheckbox from '../../components/FilterColumns/filter';
+import MultiSelectDropdownCheckbox from "../../components/FilterColumns/filter";
 import SortColumn from "../../components/SortedColumns/sort";
 
 const SlackTable: React.FC = () => {
@@ -80,7 +80,7 @@ const SlackTable: React.FC = () => {
                     />
                   </div>
                 </th>
-                {/* <th className="border border-slate-300 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="border border-slate-300 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   {SlackTableHeaders.TYPE}
                   <MultiSelectDropdownCheckbox
                     options={Array.from(
@@ -89,7 +89,7 @@ const SlackTable: React.FC = () => {
                     onSelectionChange={handleIdentifierChange}
                     placeholder=""
                   />
-                </th> */}
+                </th>
               </Tr>
             </thead>
             <tbody className="bg-white divide-gray-200">
