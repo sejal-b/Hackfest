@@ -1,14 +1,17 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { SlackTableHeaders, SORTBY} from 'src/consts/enums/placeholders.const';
-import { DetailsTable, DetailsTableContainer } from 'src/features/state/conatiner.styled';
-import Pagination from 'src/components/Pagination/pagination';
-import { Table, Tr } from 'src/components/Table/table';
-import Mockdata, { Notification } from 'src/mock/data';
-import MultiSelectDropdownCheckbox from '../../components/FilterColumns/filter';
+import React, { useEffect, useMemo, useState } from "react";
+import { SlackTableHeaders, SORTBY } from "src/consts/enums/placeholders.const";
+import {
+  DetailsTable,
+  DetailsTableContainer,
+} from "src/features/state/conatiner.styled";
+import Pagination from "src/components/Pagination/pagination";
+import { Table, Tr } from "src/components/Table/table";
+import { Mockdata2, Notification } from "src/mock/data";
+import MultiSelectDropdownCheckbox from "../../components/FilterColumns/filter";
 import SortColumn from "../../components/SortedColumns/sort";
 
 const SlackTable: React.FC = () => {
-  const [notifications, setNotifications] = useState<Notification[]>(Mockdata);
+  const [notifications, setNotifications] = useState<Notification[]>(Mockdata2);
   const [filteredNotifications, setFilteredNotifications] =
     useState<Notification[]>(notifications);
   const [selectedIdentifiers, setSelectedIdentifiers] = useState<string[]>([]);

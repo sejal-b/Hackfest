@@ -2,31 +2,25 @@ import React from "react";
 import { Grid, Box } from "@mui/material";
 import slackLogo from "src/assets/slack-logo.png";
 import githubLogo from "src/assets/github-logo.png";
-import IntegrationCard from "../components/Cards/integrationCard";
+import IntegrationCard from "../components/Cards/integrationCard"; // Ensure this path is correct
 
 const Integrations: React.FC = () => {
-    const integrations = [
-        { name: "Slack", logo: slackLogo, installed: true },
-        { name: "GitHub", logo: githubLogo, installed: false },
-    ];
+  const integrations = [
+    { name: "Slack", logo: slackLogo, installed: true },
+    { name: "GitHub", logo: githubLogo, installed: false },
+  ];
 
-    return (
-        <div>
-            <Grid container justifyContent="center" spacing={3} padding={3}>
-                {integrations.map((integration) => (
-                    <Grid item key={integration.name}>
-                        <Box>
-                        <IntegrationCard
-                                name={integration.name}
-                                logo={integration.logo}
-                                installed={integration.installed}
-                            />
-                        </Box>
-                    </Grid>
-                ))}
-            </Grid>
-        </div>
-    );
+  return (
+    <Box sx={{ padding: 3 }}>
+      <Grid container justifyContent="center" spacing={3}>
+        {integrations.map(({ name, logo, installed }) => (
+          <Grid item key={name}>
+            <IntegrationCard name={name} logo={logo} installed={installed} />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  );
 };
 
 export default Integrations;

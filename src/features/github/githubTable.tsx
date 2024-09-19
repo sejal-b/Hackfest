@@ -9,7 +9,7 @@ import {
   GithubTableHeaders,
   SORTBY,
 } from "src/consts/enums/placeholders.const";
-import Mockdata, { Notification } from "src/mock/data";
+import { Mockdata, Notification } from "src/mock/data";
 import SortColumn from "../../components/SortedColumns/sort";
 import MultiSelectDropdownCheckbox from "../../components/FilterColumns/filter";
 
