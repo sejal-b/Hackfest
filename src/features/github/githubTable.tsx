@@ -11,6 +11,7 @@ import {
 } from "src/consts/enums/placeholders.const";
 import Mockdata, { Notification } from "src/mock/data";
 import SortColumn from "../../components/SortedColumns/sort";
+import MultiSelectDropdownCheckbox from "../../components/FilterColumns/filter";
 
 const GithubTable: React.FC = () => {
   const [notifications, setNotifications] = useState<Notification[]>(Mockdata);
@@ -74,6 +75,16 @@ const GithubTable: React.FC = () => {
                   key="timestamp"
                   updateFilters={handleSortChange}
                   asc={sortOrder}
+                />
+              </th>
+              <th className="border border-slate-300 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                {GithubTableHeaders.TYPE}
+                <MultiSelectDropdownCheckbox
+                  options={Array.from(
+                    new Set(notifications.map((n) => n.identifier))
+                  )}
+                  onSelectionChange={handleIdentifierChange}
+                  placeholder=""
                 />
               </th>
             </Tr>
