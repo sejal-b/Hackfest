@@ -44,7 +44,8 @@ const Sidebar: React.FC = () => {
                             setOpen(false);
                         }}
                         sx={{
-                            color: "blue",
+                            textAlign: "center",
+                            color: "#3B82F6",
                             marginInlineStart: "15px",
                             cursor: "pointer",
                             padding: "1rem",
@@ -63,6 +64,7 @@ const Sidebar: React.FC = () => {
                                     <Typography
                                         variant="body1"
                                         sx={{
+                                            textAlign: "center",
                                             fontSize: "1.2rem",
                                             fontWeight: location.pathname === "/slack" ? "bold" : "normal",
                                         }}
@@ -82,6 +84,7 @@ const Sidebar: React.FC = () => {
                                     <Typography
                                         variant="body1"
                                         sx={{
+                                            textAlign: "center",
                                             fontSize: "1.2rem",
                                             fontWeight: location.pathname === "/github" ? "bold" : "normal",
                                         }}

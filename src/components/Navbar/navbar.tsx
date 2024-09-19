@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Box, Drawer, List, ListItemButton, ListItemText } from "@mui/material";
 import { Link as RouterLink, useLocation } from "react-router-dom";
@@ -11,7 +10,7 @@ import { styled } from "@mui/material/styles";
 import logo from "src/assets/logo.png";
 import { useNavigate } from "react-router-dom";
 
-const Link = styled(RouterLink)(({ theme }) => ({
+const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
   color: "inherit",
 }));
