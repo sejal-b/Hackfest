@@ -42,3 +42,18 @@ export const DetailsTable = styled.table`
     }
   }
 `;
+
+export const Header = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+`;
+
+export const Title = styled.h1`
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 2rem; 
+`;
+
